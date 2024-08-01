@@ -25,7 +25,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### run this command on cmd / vs code powershell / git bash
 <ul>
   <li>
-    git clone https://github.com/mehedimd/SalesManagementAngular.git
+    git clone https://github.com/FarhansGits/SalesManagement-Angular.git
   </li>
   <li>
     cd SalesManagementAngular
