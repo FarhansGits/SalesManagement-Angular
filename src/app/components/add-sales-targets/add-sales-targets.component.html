@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form [formGroup]="SalesTargetForm" (ngSubmit)="Save()">
+          <fieldset>
+            <legend>@if(isEdit) { Edit Target } @else { Add Target }</legend>
+            <div class="form-group">
+              @if (isEdit) {
+                <label for="salesTargetId">SalesTarget Id</label>
+                <input type="number" class="form-control" formControlName="salesTargetId" readonly />
+              } 
+            </div>
+            <div class="form-group">
+              <label for="targetTaka">Target Taka</label>
+              <input type="text" class="form-control" formControlName="targetTaka" />
+            </div>
+            <div class="form-group">
+              <label for="closingDate">Closing Date</label>
+              <input type="date" class="form-control" formControlName="closingDate" />
+            </div>
+
+          <div class="form-group">
+            <label for="employeeId">Select Employee</label>
+            <mat-select class="form-control" formControlName="employeeId">
+              @for (item of employeeList; track $index) 
+              {
+                  <mat-option [value]="item.employeeId">
+                    {{item.employeeName}}
+                  </mat-option>
+              }
+            </mat-select>
+          </div>
+
+              
+
+
+
+
+            <div class="form-group">
+              @if(isEdit) {
+                <button type="submit" class="btn btn-primary" [disabled]="!SalesTargetForm.valid">
+                  <i class="material-icons">update</i> Update
+                </button>
+              } @else {
+                <button type="submit" class="btn btn-primary" [disabled]="!SalesTargetForm.valid">
+                  <i class="material-icons">save</i> Save
+                </button>
+              }
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>

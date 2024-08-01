@@ -1,0 +1,268 @@
+<!-- Rifat start -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Welcome Dashboard</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Order Matrix</h1>
+    </div>
+
+    <div class="col-md-3">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #25b003"
+      >
+        <div class="card-body" style="color: #25b003">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            
+          >
+            Total Orders
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{totalorder}} oders</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid rgb(78, 115, 223)"
+      >
+        <div class="card-body" style="color: rgb(78, 115, 223)">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            
+          >
+            Hold Aprove
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{onhold}} oders</b><div>{{onholdparcent}}%</div></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #f48270"
+      >
+        <div class="card-body" style="color: #f48270">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="font-family: Nunito Sans"
+          >
+          hold Delivery
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{holdDelivery}} oders</b><div>{{holdDelivery/totalProduct*100}}%</div></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #36b9cc"
+      >
+        <div class="card-body" style="color: #36b9cc">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="font-family: Nunito Sans"
+          >
+          Completed
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{deliveryCompleted}} oders</b><div>{{(deliveryCompleted/totalProduct)*100}}%</div></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mt-5">
+      <h1>Product Matrix</h1>
+    </div>
+
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #36b9cc"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="color: #36b9cc"
+          >
+            Total products
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{totalProduct}} products</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #25b003"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="color: #25b003"
+          >
+            available products
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{totalProduct}} products</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #ffc107"
+      >
+        <div class="card-body">
+          <h2 class="text-xs font-weight-bold text-uppercase mb-1 text-warning">
+            low stock
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>0 products</b></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #e33545"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1 text-danger"
+            style="font-family: Nunito Sans"
+          >
+            out of stock
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>0 products</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mt-5">
+      <h1>Outlet Matrix</h1>
+    </div>
+
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #36b9cc"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="color: #36b9cc"
+          >
+            Total Outlet
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>{{totalpharmacy}} outlet</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #4e73df"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="color: #4e73df"
+          >
+            new customers
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>57 new orders</b></h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div
+        class="card text-black bg-white mb-3"
+        style="border-left: 3px solid #25b003"
+      >
+        <div class="card-body">
+          <h2
+            class="text-xs font-weight-bold text-uppercase mb-1"
+            style="color: #25b003"
+          >
+            active customers
+          </h2>
+          <h3 class="text-xs font-weight-bold mt-3"><b>5 orders</b></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h1>Target & Achievement Matrix</h1>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card text-black bg-white mb-3"
+          style="border-left: 3px solid #36b9cc"
+        >
+          <div class="card-body">
+            <h2
+              class="text-xs font-weight-bold text-uppercase mb-1"
+              style="color: #36b9cc"
+            >
+              Total Target
+            </h2>
+            <h3 class="text-xs font-weight-bold mt-3">
+              <b>{{ totalTarget }} tk</b>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card text-black bg-white mb-3"
+          style="border-left: 3px solid #4e73df"
+        >
+          <div class="card-body">
+            <h2
+              class="text-xs font-weight-bold text-uppercase mb-1"
+              style="color: #4e73df"
+            >
+              Total Achievement
+            </h2>
+            <h3 class="text-xs font-weight-bold mt-3">
+              <b>{{ totalAchievement }} tk</b>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div
+          class="card text-black bg-white mb-3"
+          style="border-left: 3px solid #25b003"
+        >
+          <div class="card-body">
+            <h2
+              class="text-xs font-weight-bold text-uppercase mb-1"
+              style="color: #25b003"
+            >
+              Achievement Percentage
+            </h2>
+            <h3 class="text-xs font-weight-bold mt-3">
+              <b>{{ ((totalAchievement / totalTarget) * 100).toFixed(2) }}%</b>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- rifat end -->
+  </div>
+</div>
+
+<!-- Rifat start -->
